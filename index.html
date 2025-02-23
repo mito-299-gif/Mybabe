@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My babe 🥺❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+
+        }
+
+        h1 {
+            font-size: 2rem;
+
+            color: #ff66b3;
+            margin-bottom: 20px;
+        }
+
+        .heart {
+            font-size: 4rem;
+
+            cursor: pointer;
+            animation: float 2s infinite ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #message p {
+            font-size: 1rem;
+
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff66b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+
+            max-width: 200px;
+
+        }
+
+        button:hover {
+            background-color: #ff4da1;
+        }
+
+        #surprise img {
+            width: 100%;
+            max-width: 200px;
+
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+
+            }
+
+            .heart {
+                font-size: 3rem;
+
+            }
+
+            #message p {
+                font-size: 0.9rem;
+
+            }
+
+            button {
+                font-size: 0.9rem;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ກ່ອນນອນເຂົາມີແນວສິບອກເພີ່ນກົດທີ່ຫົວໃຈ</h1>
+        <div class="heart" onclick="showMessage()">💖</div>
+        <div id="message" class="hidden">
+            <p></p>ເຈົ້າຄືຄົນໃນທຸກໆເຊົ້າ ແລະ ກາເປັນຄົນສຸດທ້າຍໃນທຸກໆຄືນ
+            <p>ເພີ່ນບໍແມ່ນ No one ແຕ່ເປັນ My noly one </p>
+            <button onclick="showSurprise()">open</button>
+        </div>
+        <div id="surprise" class="hidden">
+            <br>
+            <p>ຝັນດີ My babe</p>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB6NXJlbXJ2MzFubTIxam14bWV0MWdqNnp0dzQ3cThidnM3YXBxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WP1Z0FfnuMuXqPvDlj/giphy.webp"
+                alt="Surprise GIF">
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
+            message.classList.remove("hidden");
+        }
+
+        function showSurprise() {
+            const surprise = document.getElementById("surprise");
+            surprise.classList.remove("hidden");
+        }
+    </script>
+</body>
+
+</html>
